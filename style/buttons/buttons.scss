@@ -1,0 +1,122 @@
+.buttons {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f68d2e;
+  width: 160px;
+  height: 56px;
+  z-index: 1;
+  position: absolute;
+}
+.button-shadow {
+  width: 160px;
+  min-height: 56px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 6px;
+  z-index: 0;
+}
+.header-shadow2 {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+}
+.header-shadow {
+  &{
+    @media screen and (max-width: 420px) {
+      width: 140px;
+    }
+  }
+
+}
+.button-header1,
+.button-header2 {
+  background-color: white;
+}
+.button-section0 {
+  background-color: #8abadd;
+  @media screen and (max-width: 1100px) {
+    & {
+      position: relative;
+    }
+  }
+}
+.button-section1 {
+  background-color: #f5cabf;
+}
+.button-section2 {
+  background-color: #ecb3cb;
+}
+.button-section3page2 {
+  background-color: #f5cabf;
+}
+.button-section3page3 {
+  background-color: #8abadd;
+}
+.button-footerTop {
+  background-color: #8abadd;
+}
+.subscribe {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+
+  .subscribe-button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    height: 44px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f5cabf;
+  }
+
+  .subscribe-button:hover,
+  :focus {
+    background-color: #f68d2e;
+  }
+
+  .subscribe-input {
+    font-size: 20px;
+    height: 40px;
+    width: 220px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    @media screen and (max-width: 420px) {
+      & {
+        width: 150px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .subscribe-input:focus {
+    background-color: #3898ec;
+  }
+
+  .button-footer {
+    min-height: 46px;
+    left: 0;
+  }
+
+  .input-footer {
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 16px;
+    width: 200px;
+    @media screen and (max-width: 420px) {
+      & {
+        width: 150px;
+        font-size: 15px;
+      }
+    }
+  }
+}

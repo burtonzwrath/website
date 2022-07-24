@@ -1,0 +1,73 @@
+.buttons {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f68d2e;
+  width: 160px;
+  height: 56px;
+  z-index: 1;
+  position: absolute;
+}
+
+.button-shadow {
+  width: 160px;
+  min-height: 56px;
+  border-radius: 15px;
+  background-color: black;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 6px;
+  z-index: 0;
+}
+
+.header-shadow2 {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 420px) {
+  .header-shadow {
+    width: 140px;
+  }
+}
+
+.button-header1,
+.button-header2 {
+  background-color: white;
+}
+
+.button-section0 {
+  background-color: #8abadd;
+}
+@media screen and (max-width: 1100px) {
+  .button-section0 {
+    position: relative;
+  }
+}
+
+.button-section1 {
+  background-color: #f5cabf;
+}
+
+.button-section2 {
+  background-color: #ecb3cb;
+}
+
+.button-section3page2 {
+  background-color: #f5cabf;
+}
+
+.button-section3page3 {
+  background-color: #8abadd;
+}
+
+.button-footerTop {
+  background-color: #8abadd;
+}
+
+/*# sourceMappingURL=buttons.css.map */

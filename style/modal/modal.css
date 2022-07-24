@@ -1,0 +1,123 @@
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  min-height: 100%;
+  background-attachment: fixed;
+  justify-content: center;
+}
+
+.modal__window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 1012;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  top: 20%;
+}
+@media screen and (max-width: 900px) {
+  .modal__window {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__window {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+.modal__close {
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal__close div:nth-of-type(1) {
+  width: 100%;
+  height: 1px;
+  background-color: #222222;
+  top: 50%;
+  transform: translate(1px, 8px) rotate(45deg);
+}
+.modal__close div:nth-of-type(2) {
+  width: 100%;
+  height: 1px;
+  background-color: #222222;
+  top: 50%;
+  transform: translate(1px, 7px) rotate(-45deg);
+}
+
+.modal__window .buttonFace-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 57px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.modal__window .navBar {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.modal__window .navBar ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 23px;
+}
+
+.modal__window .navBar ul li a {
+  color: #070606;
+  font-weight: bold;
+}
+
+.modal__window .navBar ul li:last-child {
+  display: none;
+}
+
+.modal__window .buttonFace-wrapper div {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  background-color: black;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 6px;
+  z-index: 0;
+}
+
+.modal__window .buttonFace-wrapper button {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  background-image: url(../../img/header/person.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+/*# sourceMappingURL=modal.css.map */
