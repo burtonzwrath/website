@@ -1006,10 +1006,14 @@ body {
         -ms-flex-align: center;
         align-items: center;
         width: 100%;
-        background-image: url("../img/section5/blue-linear-gradient-pink-1920x1080-c2-ff1493-00008b-a-165-f-14.svg");
+        background-image: url("../img/section5/photo.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         gap: 25px;
+      }
+      .img-section6{
+        height: 100%;
+        object-fit: cover;
       }
 
       .img2-section6 {

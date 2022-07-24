@@ -895,10 +895,14 @@ body .main .section6__rightSide {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  background-image: url("../img/section5/blue-linear-gradient-pink-1920x1080-c2-ff1493-00008b-a-165-f-14.svg");
+  background-image: url("../img/section5/photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   gap: 25px;
+}
+body .main .section6 .img-section6 {
+  height: 100%;
+  object-fit: cover;
 }
 @media screen and (max-width: 1100px) {
   body .main .section6 .img2-section6 {
