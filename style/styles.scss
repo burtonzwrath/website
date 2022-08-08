@@ -922,7 +922,6 @@ body {
         }
       }
     }
-
     .section6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1058,6 +1057,26 @@ body {
         }
       }
     }
+    .section7 {
+      height: 200px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: justify;
+      justify-content: space-evenly;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      background-color: #2d2a26;
+      @media screen and (max-width: 1100px) {
+        & {
+          height: 55px;
+        }
+      }
+
+    }
 
     @-webkit-keyframes marquee {
       0% {
@@ -1082,27 +1101,14 @@ body {
     }
   }
   .footer {
+    position: sticky;
     bottom: 0;
     position: -webkit-sticky;
-    position: sticky;
-    max-height: 430px;
+    max-height: 230px;
     width: 100%;
     background-color: #2d2a26;
     z-index: 15;
 
-    &__top-wrapper {
-      height: 200px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: space-around;
-      -ms-flex-pack: justify;
-      justify-content: space-evenly;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 100%;
-    }
 
     &__top {
       width: 100%;
@@ -1128,12 +1134,11 @@ body {
     }
 
     &__hr {
-      margin: 0 10%;
-      color: white;
+      margin: 0 ;
     }
 
     &__bot-wrapper {
-      min-height: 130px;
+      min-height: 100px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1196,16 +1201,9 @@ body {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
       }
-      &__top-wrapper {
-        height: 120px;
-      }
+
       &__bot-midContent {
-        padding-right: 0;
-        -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-        order: 3;
-        position: absolute;
-        bottom: 20px;
+        display: none;
       }
       &__top {
         margin-left: 0;
@@ -1229,14 +1227,12 @@ body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        padding-right: 20px;
         width: 370px;
-        padding-bottom: 40px;
         -ms-flex-pack: distribute;
         justify-content: space-around;
       }
       &__bot-wrapper {
-        min-height: 200px;
+        min-height: 130px;
       }
       .subscribe {
         padding-top: 20px;
