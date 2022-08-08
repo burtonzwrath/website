@@ -1,5 +1,6 @@
 const li = document.querySelectorAll(`.navBar__li`);
 const input = document.querySelectorAll(".subscribe-input");
+const buttonSubscribe = document.querySelectorAll(".subscribe-button");
 const button = document.querySelectorAll(".buttons");
 const body = document.querySelector("body");
 const form = document.querySelectorAll("form");
@@ -25,6 +26,13 @@ input.forEach((item) => {
   });
 });
 button.forEach((item) => {
+ item.addEventListener("mouseenter",(e)=> {
+   e.target.classList.add("activeBorder")
+ })
+   item.addEventListener("mouseout",(e)=>{
+     e.target.classList.remove("activeBorder")
+ })
+  item.style.cursor="pointer"
   item.addEventListener("click", (e) => {
     e.target.style.marginTop = "4px";
     e.target.style.marginLeft = "4px";
@@ -34,6 +42,9 @@ button.forEach((item) => {
     }, 300);
   });
 });
+buttonSubscribe.forEach((item)=>{
+  item.style.cursor="pointer"
+})
 
 const faceIconClone = document
   .querySelector(`.buttonFace-wrapper`)
