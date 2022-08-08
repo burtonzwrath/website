@@ -1126,13 +1126,10 @@ body {
       line-height: 232%;
       color: #fcfcf0;
       gap: 100px;
-      margin-left: 20%;
     }
 
-    &__top-rightItem {
-      margin-left: 180px;
-      padding-right: 200px;
-      min-width: 150px;
+    &__top-rightItem.footer__hideDiv {
+      min-width: 200px;
     }
 
     &__hr {
@@ -1189,6 +1186,13 @@ body {
       line-height: 232%;
       text-align: center;
       color: #6f6a63;
+    }
+    &__hideDiv {
+    min-width: 100px;
+      padding-left: 20%;
+    }
+    &__top-midItem{
+min-width: 160px;
     }
     @media screen and (max-width: 1100px) {
       &__hideDiv {

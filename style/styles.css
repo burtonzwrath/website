@@ -1003,12 +1003,9 @@ body .footer__top {
   line-height: 232%;
   color: #fcfcf0;
   gap: 100px;
-  margin-left: 20%;
 }
-body .footer__top-rightItem {
-  margin-left: 180px;
-  padding-right: 200px;
-  min-width: 150px;
+body .footer__top-rightItem.footer__hideDiv {
+  min-width: 200px;
 }
 body .footer__hr {
   margin: 0;
@@ -1060,6 +1057,13 @@ body .footer__bot-midContent {
   line-height: 232%;
   text-align: center;
   color: #6f6a63;
+}
+body .footer__hideDiv {
+  min-width: 100px;
+  padding-left: 20%;
+}
+body .footer__top-midItem {
+  min-width: 160px;
 }
 @media screen and (max-width: 1100px) {
   body .footer__hideDiv {
